@@ -35,8 +35,11 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1.1;
+}
+.h1Home {
+  line-height: 1.5em;
 }
 
 button {
@@ -57,10 +60,18 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.btnHome {
+  padding: 1rem;
+}
+.btnHome:hover {
+  background-color: #333333;
+  color: white;
+  border: 0.2px solid #ffffff;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #ccc;
   }
   a:hover {
     color: #747bff;
