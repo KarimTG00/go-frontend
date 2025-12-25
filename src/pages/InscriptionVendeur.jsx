@@ -1,9 +1,7 @@
-function InscriptionVendeur() {
+export default function InscriptionVendeur() {
   return (
     <>
-      <h1>Inscription Vendeur</h1>
+      <div>Inscription Vendeur</div>
     </>
   );
 }
-
-export default InscriptionVendeur;

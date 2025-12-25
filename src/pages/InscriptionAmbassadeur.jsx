@@ -1,4 +1,4 @@
-function InscriptionVendeur() {
+function InscriptionAmbassadeur() {
   return (
     <>
       <h1>Inscription ambassadeur</h1>
@@ -6,4 +6,4 @@ function InscriptionVendeur() {
   );
 }
 
-export default InscriptionVendeur;
+export default InscriptionAmbassadeur;

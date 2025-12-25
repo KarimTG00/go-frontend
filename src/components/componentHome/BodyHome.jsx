@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function BodyHome() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="max-w-full mx-auto px-40 pt-30 relative space-y-10">
@@ -7,7 +10,7 @@ export default function BodyHome() {
             <h1 className="h1Home">
               Vous souhaitez augmenenter la visibilité de votre business ou meme
               directement gagner de l'argent en devenant ambassadeur ? Bienvenue
-              sur Go.
+              sur Dealo.
             </h1>
           </div>
           <div className="flex gap-10">
@@ -17,7 +20,10 @@ export default function BodyHome() {
                 postez les annonces de vos produits et laissez nos ambassadeur
                 faire la publicité !
               </p>
-              <button className="hover:bg-black/10">
+              <button
+                className="hover:bg-black/10 cursor-pointer btnDefault"
+                onClick={() => navigate("/register")}
+              >
                 <span className="text-black text-lg font-bold">
                   Devenir Vendeur
                 </span>
@@ -28,7 +34,10 @@ export default function BodyHome() {
               <p className="text-xl">
                 Gagner de l'argent en partageant les annonces de produits.
               </p>
-              <button className="hover:bg-black/10">
+              <button
+                className="hover:bg-black/10 btnDefault"
+                onClick={() => navigate("/register-ambassadeur")}
+              >
                 <span className="text-black text-lg font-bold">
                   Devenir ambassadeur
                 </span>

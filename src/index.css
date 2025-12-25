@@ -5,10 +5,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -42,41 +38,49 @@ h1 {
   line-height: 1.5em;
 }
 
-button {
+.btnDefault {
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f8f8f8;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
+.btnDefault:focus,
+.btnDefault:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+.btnDefault:hover {
+  border: 1px solid #565ee6;
 }
 .btnHome {
   padding: 1rem;
+}
+.btnVendeur {
+  background-color: #747bff;
+  border-radius: 1rem;
+  color: white;
+  border: 0.2px solid #000000;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border: 1px solid #747bff;
+  padding: 0.2rem;
+  transition: 0.1s ease-in-out;
 }
 .btnHome:hover {
   background-color: #333333;
   color: white;
   border: 0.2px solid #ffffff;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #000000;
-    background-color: #ccc;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btnVendeur:hover {
+  background-color: #565ee6;
+  border: 1px solid #565ee6;
+}
+.btnVendeur:focus {
+  outline: none;
 }
